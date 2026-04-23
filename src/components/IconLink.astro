@@ -2,6 +2,21 @@
 import { Icon } from "astro-icon/components";
 
 const { icon, url } = Astro.props;
+
+let bgClass = "bg-gray-500 hover:bg-gray-400 text-white"; // default
+let style = "";
+
+if (icon === "github") bgClass = "bg-gray-800 hover:bg-gray-700 text-white dark:bg-gray-700 dark:hover:bg-gray-600";
+else if (icon === "linkedin") bgClass = "bg-[#0a66c2] hover:bg-[#004182] text-white";
+else if (icon === "whatsapp") bgClass = "bg-[#25d366] hover:bg-[#1da851] text-white";
+else if (icon === "facebook") bgClass = "bg-[#1877f2] hover:bg-[#0c5aab] text-white";
+else if (icon === "tiktok") bgClass = "bg-black hover:bg-gray-800 text-white dark:bg-gray-800 dark:hover:bg-gray-700";
+else if (icon === "instagram") {
+  bgClass = "text-white hover:scale-110";
+  style = "background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);";
+}
+else if (icon === "youtube") bgClass = "bg-[#ff0000] hover:bg-[#cc0000] text-white";
+else if (icon === "email") bgClass = "bg-slate-600 hover:bg-slate-500 text-white";
 ---
 
 <li>
@@ -9,11 +24,12 @@ const { icon, url } = Astro.props;
     href={url}
     aria-label={icon}
     title={icon}
-    class="bg-lightModeIconLinkBackground dark:bg-darkModeIconLinkBackground hover:bg-lightModeIconLinkBackgroundHover dark:hover:bg-darkModeIconLinkBackgroundHover hover:ring-lightModeIconLinkOutlineHover dark:hover:ring-darkModeIconLinkOutlineHover group block rounded-full p-3 ring-2 ring-lightModeIconLinkOutline transition-colors dark:ring-darkModeIconLinkOutline"
+    class={`group block rounded-full p-3 shadow-md transition-all hover:-translate-y-1 hover:shadow-lg ${bgClass}`}
+    style={style}
   >
     <Icon
       name={icon}
-      class="text-lightModeIconLinkText group-hover:text-lightModeIconLinkTextHover group-hover:dark:text-darkModeIconLinkTextHover dark:text-darkModeIconLinkText size-6 transition-colors"
+      class="size-6 transition-colors"
     />
   </a>
 </li>
