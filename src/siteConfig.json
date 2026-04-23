@@ -1,61 +1,66 @@
 {
-  "name": "JCI Tunari",
-  "bio": "\uD83D\uDCBC Organización de jóvenes lideres \uD83C\uDF31, bajo la misión \uD83D\uDE80 de ofrecer oportunidades de desarrollo \uD83D\uDCDA que empoderen a los jóvenes \uD83D\uDC65 para crear cambios positivos \uD83C\uDF0D.",
-  "profilePicture": "/logo-tunari.png",
+  "name": "codingFer",
+  "bio": "Me gusta la tecnología 💻, programar 👨‍💻 y el desarrollo de software 🚀. Pero también me gusta la lectura 📚, los videojuegos 🎮, la natación 🏊 y la música 🎵. Puedes probar algunas de mis aplicaciones 🧪📱.",
+  "profilePicture": "/profile.webp",
   "url": "https://jcitunari.com",
   "blog": false,
   "iconLinks": [
     {
-      "id": "1728534577183",
-      "icon": "facebook",
-      "url": "https://www.facebook.com/JCITunari"
-    },
-    {
-      "id": "1728534577184",
-      "icon": "tiktok",
-      "url": "https://www.tiktok.com/@jcitunari"
-    },
-    {
       "id": "1728534577185",
       "icon": "email",
-      "url": "mailto:jcitunari@gmail.com"
-    },
-    {
-      "id": "1728534577186",
-      "icon": "instagram",
-      "url": "https://duckduckgo.com/?q=jci+tunari&t=opera&ia=web"
-    },
-    {
-      "id": "1728534577187",
-      "icon": "linkedin",
-      "url": "https://www.linkedin.com/company/jcitunari"
+      "url": "mailto:codingfer@gmail.com"
     },
     {
       "id": "1728534577188",
       "icon": "github",
-      "url": "https://github.com/jcitunari"
+      "url": "https://www.linkedin.com/in/codingfer/"
+    },
+    {
+      "id": "1728534577187",
+      "icon": "linkedin",
+      "url": "https://www.linkedin.com/in/codingfer"
+    },
+    {
+      "id": "1728534577190",
+      "icon": "whatsapp",
+      "url": "https://wa.me/59176959845?text=Hola,%20estoy%20interesado%20en%20desarrollar%20una%20p%C3%A1gina%20web.%20%C2%BFPodr%C3%ADas%20darme%20informaci%C3%B3n%20sobre%20tus%20servicios%20y%20precios?%20Gracias."
+    },
+    {
+      "id": "1728534577183",
+      "icon": "facebook",
+      "url": "https://www.facebook.com/share/18P9m9QsMG/"
+    },
+    {
+      "id": "1728534577184",
+      "icon": "tiktok",
+      "url": "https://www.tiktok.com/@codingfer?_r=1&_t=ZS-95ljjZDS22p"
+    },
+    {
+      "id": "1728534577186",
+      "icon": "instagram",
+      "url": "https://www.instagram.com/codingfer?igsh=MTI2dXBieGc5azhuNw=="
     },
     {
       "id": "1728534577189",
       "icon": "youtube",
-      "url": "https://www.youtube.com/channel/UCvudh5bfWInIRl717AZLlzg"
+      "url": "https://www.youtube.com/watch?v=fG59fshRCws"
     }
   ],
   "customLinks": [
     {
       "id": "1728534585738",
-      "title": "\uD83C\uDFD4\uFE0F Escuela De Líderes EDL-JCI TUNARI (POSTULATE)",
-      "url": "https://docs.google.com/forms/d/e/1FAIpQLSdE0cPCql1IBCBb2w3OdXQt8FxuumyGWqVbFyJdvTwuYTwtew/viewform"
+      "title": "💸🤝 Divide gastos fácilmente (PRUÉBALO)",
+      "url": "https://split-receipt.codingfer.com/es/"
     },
     {
       "id": "1728534585739",
-      "title": "\uD83D\uDE80 JCI Electoral Academy 2025",
-      "url": "https://forms.gle/gj9WEo3RYwVRd6CdA"
+      "title": "🏛️📋 Gestiona tus reuniones sin complicaciones (ACCEDE AQUÍ)",
+      "url": "https://assembly-secretary.codingfer.com"
     },
     {
       "id": "1728534585740",
-      "title": "\uD83D\uDCE2 VOZ DE LÍDERES  2025",
-      "url": "https://forms.gle/EydYNpk4eSvQ62Np6"
+      "title": "💸🔍 Validador de Billetes Seguro (VERIFICA AQUÍ)",
+      "url": "https://consulta-bs.jcitunari.com"
     }
   ]
 }
