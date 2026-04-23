@@ -4,24 +4,40 @@ import { Image } from "astro:assets";
 import { SITE } from "@/siteConfig";
 
 import profilePicture from "@/assets/profile.webp";
+import backgroundPicture from "@/assets/background.webp";
 ---
 
-<div class="mt-8 py-4">
-  <a href={SITE.url} title="😎">
-    <Image
-        src={profilePicture}
-        alt={SITE.name}
-        height={256}
-        width={256}
+<div class="w-full">
+  <div class="relative mb-6 w-full">
+    <div class="h-32 w-full overflow-hidden rounded-lg sm:h-40">
+      <Image
+        src={backgroundPicture}
+        alt="Background"
+        class="h-full w-full object-cover"
         loading="eager"
-        draggable="false"
-        class="mx-auto size-32 rounded-full"
-    />
-  </a>
-  <h1 class="mt-4 text-center text-3xl font-semibold">{SITE.name}</h1>
-  <p
-    class="mt-1 text-balance text-center text-sm text-lightModeForegroundMuted dark:text-darkModeForegroundMuted"
-  >
-    {SITE.bio}
-  </p>
+      />
+    </div>
+    <div class="absolute -bottom-12 left-1/2 -translate-x-1/2">
+      <a href={SITE.url} title="😎">
+        <Image
+            src={profilePicture}
+            alt={SITE.name}
+            height={256}
+            width={256}
+            loading="eager"
+            draggable="false"
+            class="size-32 rounded-full border-4 border-lightModeBackground dark:border-darkModeBackground sm:size-28"
+        />
+      </a>
+    </div>
+  </div>
+
+  <div class="mt-4 py-4">
+    <h1 class="text-center text-3xl font-semibold">{SITE.name}</h1>
+    <p
+      class="mt-1 text-balance text-center text-sm text-lightModeForegroundMuted dark:text-darkModeForegroundMuted"
+    >
+      {SITE.bio}
+    </p>
+  </div>
 </div>
