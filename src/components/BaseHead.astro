@@ -37,6 +37,19 @@ import Favicons from "@/components/Favicons.astro";
     href={new URL("rss.xml", Astro.site)}
   />
 
+  <!-- Inline theme script – prevents flash of wrong theme (FOUC) -->
+  <script is:inline>
+    (function () {
+      const saved = localStorage.getItem("theme");
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      if (saved === "dark" || (!saved && prefersDark)) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    })();
+  </script>
+
   <ViewTransitions />
   <Favicons />
 

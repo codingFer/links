@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+  darkMode: "class",
   future: {
     hoverOnlyWhenSupported: true,
   },
@@ -8,64 +9,21 @@ export default {
   theme: {
     extend: {
       colors: {
-        lightModeBackground:
-          "rgb(var(--light-mode-background) / <alpha-value>)",
-        lightModeForeground:
-          "rgb(var(--light-mode-foreground) / <alpha-value>)",
-        lightModeForegroundMuted:
-          "rgb(var(--light-mode-foreground-muted) / <alpha-value>)",
-        lightModeIconLinkOutline:
-          "rgb(var(--light-mode-icon-link-outline) / <alpha-value>)",
-        lightModeIconLinkBackground:
-          "rgb(var(--light-mode-icon-link-background) / <alpha-value>)",
-        lightModeIconLinkText:
-          "rgb(var(--light-mode-icon-link-text) / <alpha-value>)",
-        lightModeIconLinkOutlineHover:
-          "rgb(var(--light-mode-icon-link-outline-hover) / <alpha-value>)",
-        lightModeIconLinkBackgroundHover:
-          "rgb(var(--light-mode-icon-link-background-hover) / <alpha-value>)",
-        lightModeIconLinkTextHover:
-          "rgb(var(--light-mode-icon-link-text-hover) / <alpha-value>)",
-        lightModeCustomLinkOutline:
-          "rgb(var(--light-mode-custom-link-outline) / <alpha-value>)",
-        lightModeCustomLinkBackground:
-          "rgb(var(--light-mode-custom-link-background) / <alpha-value>)",
-        lightModeCustomLinkText:
-          "rgb(var(--light-mode-custom-link-text) / <alpha-value>)",
-        lightModeCustomLinkOutlineHover:
-          "rgb(var(--light-mode-custom-link-outline-hover) / <alpha-value>)",
-        lightModeCustomLinkBackgroundHover:
-          "rgb(var(--light-mode-custom-link-background-hover) / <alpha-value>)",
-        lightModeCustomLinkTextHover:
-          "rgb(var(--light-mode-custom-link-text-hover) / <alpha-value>)",
-        darkModeBackground: "rgb(var(--dark-mode-background) / <alpha-value>)",
-        darkModeForeground: "rgb(var(--dark-mode-foreground) / <alpha-value>)",
-        darkModeForegroundMuted:
-          "rgb(var(--dark-mode-foreground-muted) / <alpha-value>)",
-        darkModeIconLinkOutline:
-          "rgb(var(--dark-mode-icon-link-outline) / <alpha-value>)",
-        darkModeIconLinkBackground:
-          "rgb(var(--dark-mode-icon-link-background) / <alpha-value>)",
-        darkModeIconLinkText:
-          "rgb(var(--dark-mode-icon-link-text) / <alpha-value>)",
-        darkModeIconLinkOutlineHover:
-          "rgb(var(--dark-mode-icon-link-outline-hover) / <alpha-value>)",
-        darkModeIconLinkBackgroundHover:
-          "rgb(var(--dark-mode-icon-link-background-hover) / <alpha-value>)",
-        darkModeIconLinkTextHover:
-          "rgb(var(--dark-mode-icon-link-text-hover) / <alpha-value>)",
-        darkModeCustomLinkOutline:
-          "rgb(var(--dark-mode-custom-link-outline) / <alpha-value>)",
-        darkModeCustomLinkBackground:
-          "rgb(var(--dark-mode-custom-link-background) / <alpha-value>)",
-        darkModeCustomLinkText:
-          "rgb(var(--dark-mode-custom-link-text) / <alpha-value>)",
-        darkModeCustomLinkOutlineHover:
-          "rgb(var(--dark-mode-custom-link-outline-hover) / <alpha-value>)",
-        darkModeCustomLinkBackgroundHover:
-          "rgb(var(--dark-mode-custom-link-background-hover) / <alpha-value>)",
-        darkModeCustomLinkTextHover:
-          "rgb(var(--dark-mode-custom-link-text-hover) / <alpha-value>)",
+        bg: "rgb(var(--bg) / <alpha-value>)",
+        fg: "rgb(var(--fg) / <alpha-value>)",
+        "fg-muted": "rgb(var(--fg-muted) / <alpha-value>)",
+        "icon-outline": "rgb(var(--icon-outline) / <alpha-value>)",
+        "icon-bg": "rgb(var(--icon-bg) / <alpha-value>)",
+        "icon-text": "rgb(var(--icon-text) / <alpha-value>)",
+        "icon-outline-hover": "rgb(var(--icon-outline-hover) / <alpha-value>)",
+        "icon-bg-hover": "rgb(var(--icon-bg-hover) / <alpha-value>)",
+        "icon-text-hover": "rgb(var(--icon-text-hover) / <alpha-value>)",
+        "link-outline": "rgb(var(--link-outline) / <alpha-value>)",
+        "link-bg": "rgb(var(--link-bg) / <alpha-value>)",
+        "link-text": "rgb(var(--link-text) / <alpha-value>)",
+        "link-outline-hover": "rgb(var(--link-outline-hover) / <alpha-value>)",
+        "link-bg-hover": "rgb(var(--link-bg-hover) / <alpha-value>)",
+        "link-text-hover": "rgb(var(--link-text-hover) / <alpha-value>)",
       },
     },
   },
